@@ -1,42 +1,45 @@
-title: "Catch These Flags"
-author: "Pratyaksha Beri"
-description: "Get better or get hacked."
+theme: jekyll-theme-hacker
+name: 0xPat blog
+description: Red/purple teamer
+avatar: ../images/logo.png
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: 0xPat
+  instagram:
+  linkedin: patryk-czeczko
+  pinterest:
+  rss: 
+  twitter: 0xPat
+  stackoverflow: 
+  youtube: 
+  googleplus:
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "er123pratyaksha@gmail.com"
-# twitter_username: "twitteruser"
-github_username: "Shad0wMazt3r"
-#linkedin_username: "linkedinuser"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "jekyll-theme-hacker"
-
-rss: rss
-
+disqus:
+google_analytics:
+url:
+baseurl: ""
+permalink: /:title/
+version: v1.2.0
 kramdown:
+  input: GFM
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
-    disable: true
-    
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+    css_class: 'highlight'
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-admin
 
-titles_from_headings:
-  strip_title: true
-  collections: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
 
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
