@@ -1,14 +1,19 @@
-Here you can say lots of fun things about your site.
+---
+layout: default
+---
 
-Maybe say a some things about yourself.
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-Or maybe what you plan to blog about.
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.date | date: "%B %Y" }} - {{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <br><br><br>
+    </article>
+  {% endfor %}
+</div>
