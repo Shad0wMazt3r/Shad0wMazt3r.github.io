@@ -6,9 +6,13 @@ permalink: /about/
 
 ### About me
 
-Red/purple teamer
+The author of this blog.
+
+I'm probably working on catching some flags or chilling.
 
 
 ### Contact me
 
-[@0xPat](https://twitter.com/0xPat)
+Come say hello!
+
+[@Shad0wMazt3r](mailto:Shad0wMazt3r@protonmail.com)
