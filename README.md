@@ -1,2 +1,1 @@
-# 0xPat blog
-## Red/purple teamer
+# Shad0wMazt3r blog
