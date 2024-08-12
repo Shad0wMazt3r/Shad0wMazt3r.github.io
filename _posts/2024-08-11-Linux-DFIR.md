@@ -1,4 +1,6 @@
-# Analyzing a Compromised Linux Machine 
+# Analyzing a Compromised Linux Machine
+## Introduction
+In this project, we performed a comprehensive security analysis on a Linux machine as part of our CPRE 230 final project. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system. By leveraging a combination of manual inspection and automated tools, we were able to uncover several critical security issues that could potentially be exploited by malicious actors.
 ## Table of Contents
 - [Introduction](#introduction)
 - [Vulnerabilities and Findings](#vulnerabilities-and-findings)
@@ -11,8 +13,6 @@
     - [/var/www/html/vars.inc is publicly accessible through the webserver](#7-var-www-html-vars-inc-is-publicly-accessible-through-the-webserver)
     - [Port 1337 hosts a root-level shell](#8-port-1337-hosts-a-root-level-shell)
 - [Methodology](#methodology)
-## Introduction
-In this project, we performed a comprehensive security analysis on a Linux machine as part of our CPRE 230 final project. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system. By leveraging a combination of manual inspection and automated tools, we were able to uncover several critical security issues that could potentially be exploited by malicious actors.
 
 The following sections detail each vulnerability identified, the potential harm it could cause, proof-of-concept (PoC) demonstrations, and recommended fixes. This analysis aims to enhance our understanding of common security flaws and improve our skills in identifying and mitigating such vulnerabilities in real-world scenarios.
 
