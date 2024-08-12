@@ -1,6 +1,13 @@
+---
+permalink: /Linux-DFIR
+title: "Analyzing a Compromised Linux Machine"
+excerpt: "In this project, we performed a comprehensive security analysis on a Linux machine. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system."
+author_profile: true
+---
+
 # Analyzing a Compromised Linux Machine
 ## Introduction
-In this project, we performed a comprehensive security analysis on a Linux machine as part of our CPRE 230 final project. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system. By leveraging a combination of manual inspection and automated tools, we were able to uncover several critical security issues that could potentially be exploited by malicious actors.
+In this project, we performed a comprehensive security analysis on a Linux machine. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system. By leveraging a combination of manual inspection and automated tools, we were able to uncover several critical security issues that could potentially be exploited by malicious actors.
 ## Table of Contents
 - [Introduction](#introduction)
 - [Vulnerabilities and Findings](#vulnerabilities-and-findings)
