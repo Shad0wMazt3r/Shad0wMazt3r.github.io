@@ -152,11 +152,11 @@ Link: http://192.168.1.101/login.php
 
 Payload: ' OR 1=1 --
 
-![alt text](images/image.png)
+![The image failed to load](/images/images/image.png)
 
-![alt text](images/image-1.png)
+![The image failed to load](/images/images/image-1.png)
 
-![alt text](images/image-2.png)
+![The image failed to load](/images/images/image-2.png)
 
 This happens due to incorrect sanitization of user input. 
 
@@ -168,18 +168,18 @@ Link: http://192.168.1.101/profile.php
 
 Payload: `<script>alert(1)</script>`
 
-![alt text](images/image-3.png)
+![The image failed to load](/images/images/image-3.png)
 
-![alt text](images/image-4.png)
+![The image failed to load](/images/images/image-4.png)
 
-![alt text](images/image-5.png)
+![The image failed to load](/images/images/image-5.png)
 
 ## Finding 3: incorrect .htaccess permissions
 Link: http://192.168.1.101/vars.inc
 
 The file vars.inc is publicly accessible through the web server. This file contains sensitive information such as database credentials and should not be exposed to unauthorized users.
 
-![alt text](images/image-6.png)
+![The image failed to load](/images/images/image-6.png)
 
 ## Finding 4: backdoor user
 
@@ -193,7 +193,7 @@ su backdoor
 sudo -l 
 whoami
 ```
-![alt text](images/image-7.png)
+![The image failed to load](/images/images/image-7.png)
 
 ## Finding 5: telnet access
 
@@ -203,7 +203,7 @@ Telnet is an insecure protocol used for remote login and communication over a ne
 
 commands: `telnet 192.168.1.101 23`
 
-![alt text](images/image-8.png)
+![The image failed to load](/images/images/image-8.png)
 
 Telnet's inherent lack of encryption makes it susceptible to several types of attacks:
 
@@ -215,7 +215,7 @@ Telnet's inherent lack of encryption makes it susceptible to several types of at
 
 The fingerd service is running on the target machine, accessible on port 79. This service provides information about users on the system, including their names, login times, and more. While useful in some contexts, it can be leveraged by attackers for reconnaissance purposes.
 
-![alt text](images/image-9.png)
+![The image failed to load](/images/images/image-9.png)
 
 NMAP has discovered the user `cpre230` on the target machine.
 
@@ -229,7 +229,7 @@ username: anonymous
 
 password: anonymous
 ```
-![alt text](images/image-10.png)
+![The image failed to load](/images/images/image-10.png)
 
 ## Finding 8: 1337 port
 
@@ -237,4 +237,4 @@ For the last finding, we found a root-level shell on port 1337. It is a backdoor
 
 command: `nc 192.168.1.101 1337`
 
-![alt text](images/image-11.png)
+![The image failed to load](/images/images/image-11.png)
