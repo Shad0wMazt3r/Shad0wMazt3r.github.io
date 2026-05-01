@@ -4,27 +4,25 @@ title: About
 permalink: /about/
 ---
 
-### About me
+<section class="section-heading">
+  <h2>Cyber Security engineering student building toward practical research work.</h2>
+</section>
 
-I am Pratyaksha Beri, a Cyber Security Engineering student at Iowa State University focused on malware analysis, digital forensics, incident response, and practical offensive security research.
+I am Pratyaksha Beri, a Cyber Security Engineering student at Iowa State University. My work sits between investigation and implementation: understanding how systems fail, reproducing behavior clearly, and turning that work into readable notes or useful tools.
 
-My work spans CTFs, cyber defense competitions, Linux security analysis, embedded systems tooling, and software projects that connect security research with usable interfaces.
+I spend most of my time around security tooling, malware analysis, offensive security, CTFs, and cyber defense competitions.
 
-This portfolio collects technical writeups, investigation notes, and project work with an emphasis on clear methodology, evidence, and actionable findings.
+<section class="section-heading page-section-heading">
+  <p class="eyebrow">Current Areas</p>
+  <h2>What I am sharpening now.</h2>
+</section>
 
-
-### Selected work
-
-- The Scaffolding: vulnerability research and exploit-reproduction workspace for tracing behavior, building clean proof-of-concept cases, and documenting findings.
-- Lattice Mind: research and tooling around structured investigation workflows, reasoning artifacts, and security analysis context.
-- [HoneyEasy](https://github.com/Shad0wMazt3r/HoneyEasy): honeypot-oriented security tooling focused on making collection, observation, and lab deployment easier to work with.
-- [CyTTY](https://github.com/Shad0wMazt3r/CyTTY): UART terminal tooling for Iowa State CyBot work with voice input, text fallback, configurable UART settings, and activity logging.
-- [Scammer-List](https://github.com/Shad0wMazt3r/Scammer-List): Spam and scam detection using profile names, website signals, message analysis, and a maintained scammer dataset.
-- [Analyzing a Compromised Linux Machine]({{ site.baseurl }}/Linux-DFIR): DFIR-style writeup covering vulnerabilities, proof-of-concept evidence, impact, and remediation guidance.
+<p>Binary Exploitation, Malware analysis, Windows security, exploit reproduction, honeypot workflows, AI-assisted security analysis, and stronger technical writing.</p>
 
 
-### Contact me
+<section class="section-heading page-section-heading">
+  <p class="eyebrow">Contact</p>
+  <h2>For professional inquiries or research discussion.</h2>
+</section>
 
-For professional inquiries or research discussion:
-
-[@Shad0wMazt3r](mailto:Shad0wMazt3r@protonmail.com)
+<p><a class="text-link" href="mailto:pratyakshaberi@gmail.com">Email</a> <a class="text-link" href="https://github.com/Shad0wMazt3r">GitHub</a></p>

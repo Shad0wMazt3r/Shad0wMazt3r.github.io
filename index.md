@@ -27,7 +27,7 @@ layout: default
   </div>
 </section>
 
-<section class="selected-work reveal">
+<section class="selected-work page-band reveal">
   <div class="section-heading">
     <p class="eyebrow">Selected work</p>
     <h2>Projects and research threads</h2>
@@ -72,7 +72,7 @@ layout: default
   </div>
 </section>
 
-<section class="section-heading posts-heading reveal">
+<section class="section-heading posts-heading page-band reveal">
   <p class="eyebrow">Writing</p>
   <h2>Latest notes</h2>
 </section>
