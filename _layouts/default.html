@@ -22,15 +22,18 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead">
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
+          <a class="brand" href="{{ site.baseurl }}/" aria-label="{{ site.name }} home">
+            <span class="brand-mark">PB</span>
+            <span class="site-info">
+              <span class="site-name">{{ site.name }}</span>
+              <span class="site-description">{{ site.description }}</span>
+            </span>
+          </a>
 
           <nav aria-label="Primary navigation">
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/archive">Archive</a>
+            <a {% if page.url == "/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/">Blog</a>
+            <a {% if page.url == "/about/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/about">About</a>
+            <a {% if page.url == "/archive/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/archive">Archive</a>
           </nav>
         </header>
       </div>

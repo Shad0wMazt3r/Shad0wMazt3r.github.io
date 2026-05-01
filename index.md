@@ -41,7 +41,7 @@ layout: default
     </article>
 
     <article class="work-item">
-      <span class="work-meta"> AI toolkits / security analysis</span>
+      <span class="work-meta">AI toolkits / security analysis</span>
       <strong>Lattice Mind</strong>
       <span>Research and tooling around structured investigation workflows, reasoning artifacts, and turning security context into usable analysis.</span>
     </article>
