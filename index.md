@@ -2,10 +2,10 @@
 layout: default
 ---
 
-<section class="hero reveal">
+<section class="intro reveal">
   <p class="eyebrow">Security research portfolio</p>
-  <h1>Technical notes on malware analysis, DFIR, and offensive security.</h1>
-  <p class="hero-copy">Concise writeups, practical investigation notes, and lessons from hands-on security work.</p>
+  <h1>Notes and Observations on Cybersecurity.</h1>
+  <p class="hero-copy">Writeups, investigation notes, and lessons from hands-on security work.</p>
 </section>
 
 <div class="posts">
