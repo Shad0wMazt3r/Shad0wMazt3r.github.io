@@ -1,13 +1,14 @@
 ---
 layout: page
 title: Blog Archive
+permalink: /archive/
 ---
 
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.date | date: "%B %Y" }} - {{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div class="archive-list">
+{% for post in site.posts %}
+  <a class="archive-item" href="{{ site.baseurl }}{{ post.url }}">
+    <span>{{ post.date | date: "%B %e, %Y" }}</span>
+    <strong>{{ post.title }}</strong>
+  </a>
 {% endfor %}
+</div>

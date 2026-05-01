@@ -9,41 +9,47 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <link rel="preconnect" href="https://fonts.cdnfonts.com">
+    <link href="https://fonts.cdnfonts.com/css/ranade" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <meta name="google-site-verification" content="zL3J_3S5QaaG63yhriFB0N4MlPMk_hHxTei_rLCB8xE" />
   </head>
 
   <body>
+    <div class="site-background" aria-hidden="true"></div>
+
     <div class="wrapper-masthead">
       <div class="container">
-        <header class="masthead clearfix">
-          
+        <header class="masthead">
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
             <p class="site-description">{{ site.description }}</p>
           </div>
 
-          <nav>
+          <nav aria-label="Primary navigation">
             <a href="{{ site.baseurl }}/">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/archive">Archive</a>
           </nav>
         </header>
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <main id="main" role="main" class="container content-shell">
       {{ content }}
-    </div>
+    </main>
 
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
+          <span>Built for focused security research and analysis.</span>
         </footer>
       </div>
     </div>
 
     {% include analytics.html %}
+    <script src="{{ site.baseurl }}/js/site.js"></script>
   </body>
 </html>
