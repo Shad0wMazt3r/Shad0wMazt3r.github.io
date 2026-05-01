@@ -4,8 +4,8 @@ layout: default
 
 <section class="intro reveal">
   <p class="eyebrow">Pratyaksha Beri / Shad0wMazt3r</p>
-  <h1>Security research, tooling, and technical writeups.</h1>
-  <p class="hero-copy">Cyber Security Engineering at Iowa State University, with work across malware analysis, DFIR, CTFs, embedded systems, and practical security tooling.</p>
+  <!-- <h1>Security research, tooling, and technical writeups.</h1> -->
+  <p class="hero-copy">Cyber Security Engineering at Iowa State University, with work across agentic security, malware analysis, DFIR, CTFs, and practical security tooling.</p>
   <div class="intro-actions">
     <a class="text-link" href="https://github.com/Shad0wMazt3r">GitHub</a>
     <a class="text-link" href="{{ site.baseurl }}/about/">About</a>
@@ -15,18 +15,40 @@ layout: default
 <section class="profile-strip reveal" aria-label="Profile highlights">
   <div class="profile-item">
     <span>Focus</span>
-    <strong>Malware analysis, DFIR, offensive security</strong>
+    <strong>Application Security, Reverse Engineering, Offensive Security</strong>
   </div>
   <div class="profile-item">
-    <span>Practice</span>
-    <strong>CTFs, cyber defense competitions, lab research</strong>
+    <span>Active in</span>
+    <strong>CTFs, Cyber Defense Competitions, Research</strong>
   </div>
   <div class="profile-item">
     <span>Tools</span>
-    <strong>Python, C, Bash, Linux, web systems</strong>
+    <strong>Python, C, PHP, Java, Bash, Linux</strong>
   </div>
 </section>
 
+
+
+<section class="section-heading posts-heading page-band reveal">
+  <p class="eyebrow">Writing</p>
+  <h2>Latest notes</h2>
+</section>
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post-card reveal">
+      <div class="post-meta">{{ post.date | date: "%B %e, %Y" }}</div>
+
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read article</a>
+    </article>
+  {% endfor %}
+</div>
 <section class="selected-work page-band reveal">
   <div class="section-heading">
     <p class="eyebrow">Selected work</p>
@@ -71,24 +93,3 @@ layout: default
     </a>
   </div>
 </section>
-
-<section class="section-heading posts-heading page-band reveal">
-  <p class="eyebrow">Writing</p>
-  <h2>Latest notes</h2>
-</section>
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post-card reveal">
-      <div class="post-meta">{{ post.date | date: "%B %e, %Y" }}</div>
-
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read article</a>
-    </article>
-  {% endfor %}
-</div>
