@@ -38,7 +38,7 @@ For example, if Lattice Mind's scans give the agent enough information to write 
 
 The Scaffolding is the orchestration layer with skills and MCP servers providing the LLM with access to tools and context needed to perform their security tasks. At the start, the skills looked more like TTPs: what do you detect, where do you go from there, what can you chain etc. Obviously, I had to add a skill improvement skill where the model upon completing a task, evaluates how skills and MCP helped/harmed the run, and then modify the skills to be better next run.
 
-I put it to the test in live CTFs and it was able to solve all the hardest problems consistently in less than 30 minutes. 
+I put it to the test in live CTFs and it was able to solve the hardest problems from PicoCTF 2025 and DawgCTF 2026 in less than 30 minutes each. 
 
 ## Part II: Technical Notes
 
