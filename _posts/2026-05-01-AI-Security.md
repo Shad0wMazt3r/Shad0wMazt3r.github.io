@@ -9,7 +9,7 @@ author_profile: true
 
 Scaffolding an LLM is not a universally good idea. Whether it helps or hurts depends almost entirely on how capable the model already is, and it varies between model families.
 
-I spent eight months running LLMs against security tasks to figure out what actually works and emperically measuring them. The findings were not what I expected.
+I spent eight months running LLMs against security tasks to figure out what actually works and empirically measuring them. The findings were not what I expected.
 
 
 ### Why Raw Agents Felt Wasteful
