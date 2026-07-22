@@ -1,7 +1,7 @@
 ---
 permalink: /ai-security
 title: "The Agent Is Not the Scanner: Making AI Security Agents Better"
-excerpt: 'LLMs have gotten surprisingly good at finding vulnerabilities over the past year. These are my notes on building better AI-assisted security workflows, and how different models are impacted by scanners and skills differently.'
+excerpt: 'Eight months of testing security agents taught me that more scaffolding is not always better. Here’s where skills and MCP helped, where they hurt, and how I route models now.'
 author_profile: true
 ---
 

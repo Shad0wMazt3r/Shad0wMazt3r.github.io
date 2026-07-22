@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<article class="page page-shell reveal">
-
-  <header class="page-header">
-    <p class="eyebrow">{{ page.title }}</p>
+<article class="page-shell">
+  <header class="page-hero reveal">
+    <p class="kicker"><span>FILE</span> / {{ page.title }}</p>
     <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="page-deck">{{ page.description }}</p>{% endif %}
   </header>
-
-  <div class="entry">
+  <div class="page-content reveal">
     {{ content }}
   </div>
 </article>

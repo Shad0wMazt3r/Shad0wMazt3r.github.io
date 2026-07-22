@@ -1,7 +1,7 @@
 ---
 permalink: /Linux-DFIR
 title: "Analyzing a Compromised Linux Machine"
-excerpt: "In this project, we performed a comprehensive security analysis on a Linux machine. The objective was to identify, analyze, and provide recommendations to mitigate various vulnerabilities found on the target system."
+excerpt: "A hands-on review of a deliberately compromised Linux host: SQL injection, stored XSS, exposed services, backdoor accounts, and the evidence behind each finding."
 author_profile: true
 ---
 

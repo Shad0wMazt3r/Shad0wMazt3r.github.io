@@ -1,5 +1,5 @@
-name: Beri's Blog
-description: Security Research
+name: Shad0w / Notes
+description: Security research, malware analysis, DFIR, and notes on building security agents.
 avatar: ../images/logo.png
 footer-links:
   dribbble:
@@ -19,10 +19,10 @@ footer-links:
 
 disqus:
 google_analytics:
-url:
+url: https://shad0wmazt3r.github.io
 baseurl: ""
 permalink: /:title/
-version: v1.2.0
+version: v1.3.0
 kramdown:
   input: GFM
   syntax_highlighter: rouge
@@ -39,7 +39,6 @@ defaults:
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-admin
 
 exclude:
   - Gemfile

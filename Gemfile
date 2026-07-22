@@ -4,7 +4,6 @@ gem "jekyll", "~> 4.4"
 gem "webrick", "~> 1.8"
 
 group :jekyll_plugins do
-  gem "jekyll-admin"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
 end

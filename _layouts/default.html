@@ -1,58 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
+    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }}</title>
     {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="preconnect" href="https://fonts.cdnfonts.com">
     <link href="https://fonts.cdnfonts.com/css/ranade" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <meta name="google-site-verification" content="zL3J_3S5QaaG63yhriFB0N4MlPMk_hHxTei_rLCB8xE" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css?v={{ site.version }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl }}/feed.xml">
+    <meta name="theme-color" content="#0b0c0b">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="google-site-verification" content="zL3J_3S5QaaG63yhriFB0N4MlPMk_hHxTei_rLCB8xE">
   </head>
 
-  <body>
-    <div class="site-background" aria-hidden="true"></div>
+  <body class="{% if page.layout == 'post' %}is-article{% else %}is-page{% endif %}">
+    <div class="ambient-grid" aria-hidden="true"></div>
+    <div class="cursor-signal" aria-hidden="true"></div>
+    <div class="reading-progress" aria-hidden="true"><span></span></div>
 
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead">
-          <a class="brand" href="{{ site.baseurl }}/" aria-label="{{ site.name }} home">
-            <span class="brand-mark">PB</span>
-            <span class="site-info">
-              <span class="site-name">{{ site.name }}</span>
-              <span class="site-description">{{ site.description }}</span>
-            </span>
-          </a>
+    <button class="motion-toggle" type="button" aria-pressed="true" aria-label="Turn motion off">
+      <span></span><b>MOTION</b><em>ON</em>
+    </button>
 
-          <nav aria-label="Primary navigation">
-            <a {% if page.url == "/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/">Blog</a>
-            <a {% if page.url == "/about/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/about">About</a>
-            <a {% if page.url == "/archive/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/archive">Archive</a>
-          </nav>
-        </header>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wide-container header-inner">
+        <a class="brand" href="{{ site.baseurl }}/" aria-label="{{ site.name }} home">
+          <span class="brand-sigil">S/</span>
+          <span class="brand-copy">
+            <strong>SHAD0W / NOTES</strong>
+            <small>SECURITY FIELD NOTES</small>
+          </span>
+        </a>
+
+        <div class="header-status" aria-label="Current status">
+          <span class="status-dot"></span>
+          <span>RESEARCH IN PROGRESS</span>
+        </div>
+
+        <nav aria-label="Primary navigation">
+          <a {% if page.url == "/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/"><span>01</span> Index</a>
+          <a {% if page.url == "/about/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/about/"><span>02</span> About</a>
+          <a {% if page.url == "/archive/" %}class="is-active"{% endif %} href="{{ site.baseurl }}/archive/"><span>03</span> Archive</a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <main id="main" role="main" class="container content-shell">
+    <main id="main" class="wide-container">
       {{ content }}
     </main>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-          <span>Security research, writeups, and technical notes.</span>
-        </footer>
+    <footer class="site-footer">
+      <div class="wide-container footer-grid">
+        <div>
+          <span class="footer-mark">S/</span>
+          <p>Notes from the things I break and build.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:pratyakshaberi@gmail.com">Email ↗</a>
+          <a href="https://github.com/Shad0wMazt3r">GitHub ↗</a>
+          <a href="{{ site.baseurl }}/feed.xml">RSS ↗</a>
+        </div>
+        <div class="footer-meta">
+          <span>AMES, IOWA · CST</span>
+          <span><i></i> STILL INVESTIGATING</span>
+        </div>
+        <div class="footer-legal">
+          <span>© {{ 'now' | date: "%Y" }} Pratyaksha Beri. All rights reserved.</span>
+          <span>Research · Tools · Field notes</span>
+        </div>
       </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
-    <script src="{{ site.baseurl }}/js/site.js"></script>
+    <script src="{{ site.baseurl }}/js/site.js?v={{ site.version }}"></script>
   </body>
 </html>
